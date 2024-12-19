@@ -1,4 +1,2 @@
-import DashboardIcon from './dashboardicon.svg'
-export {
-    DashboardIcon
-}
+import DashboardIcon from './dashboardicon.svg';
+export {DashboardIcon};
