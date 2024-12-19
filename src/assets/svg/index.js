@@ -1,2 +1,3 @@
 import DashboardIcon from './dashboardicon.svg';
-export {DashboardIcon};
+import SearchIcon from './searchicon.svg'
+export {DashboardIcon,SearchIcon};
