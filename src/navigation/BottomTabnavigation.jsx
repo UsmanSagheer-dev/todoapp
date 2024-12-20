@@ -4,7 +4,7 @@ import HomeScreens from '../screens/homescreens/HomeScreens';
 import SearchScreen from '../screens/searchscreen/SearchScreen';
 import Statistics from '../screens/statistics/Statistics';
 import Dashboard from '../screens/dashboard/Dashboard';
-import { DashboardIcon, SearchIcon } from '../assets/svg/index';
+import { DashboardIcon, ProfileIcon, SearchIcon, Statisticsicon } from '../assets/svg/index';
 import { View, Text, StyleSheet } from 'react-native';
 import TabButton from '../components/tabButton/TabButton';
 import Tabbarscreens from '../screens/tabBarscreems/Tabbarscreens';
@@ -38,7 +38,7 @@ function MyTabs() {
             <DashboardIcon
               width={20}
               height={20}
-              fill={focused ? 'black' : 'gray'}
+              fill={focused ? 'gray' : 'white'}
             />
           ),
         }}
@@ -51,7 +51,7 @@ function MyTabs() {
             <SearchIcon
               width={20}
               height={20}
-              fill={focused ? 'black' : 'gray'}
+              fill={focused ? 'gray' : 'white'}
             />
           ),
         }}
@@ -73,10 +73,10 @@ function MyTabs() {
         component={Statistics}
         options={{
           tabBarIcon: ({ focused }) => (
-            <DashboardIcon
+            <Statisticsicon
               width={20}
               height={20}
-              fill={focused ? 'black' : 'gray'}
+              fill={focused ? 'gray' : 'white'}
             />
           ),
         }}
@@ -86,10 +86,10 @@ function MyTabs() {
         component={Dashboard}
         options={{
           tabBarIcon: ({ focused }) => (
-            <DashboardIcon
+            <ProfileIcon
               width={20}
               height={20}
-              fill={focused ? 'black' : 'gray'}
+              fill={focused ? 'gray' : 'white'}
             />
           ),
         }}

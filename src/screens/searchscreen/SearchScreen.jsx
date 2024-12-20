@@ -1,12 +1,17 @@
-import { View, Text } from 'react-native';
+import { View, Text,Image } from 'react-native';
 import React from 'react';
-import { DashboardIcon } from '../../assets/svg/index';
+import { ArrowBack, Billicon, ModelButton } from '../../assets/svg/index';
+import { Acconticon } from '../../assets/images/index';
+import Header from '../../components/header/Header';
 
 const SearchScreen = () => {
   return (
     <View>
-      <Text>SearchScreen</Text>
-      <DashboardIcon width={24} height={24} fill="black" />
+     <Header
+        icon={<ArrowBack width={18} height={18} />}
+        title={'Search'}
+        icon2={<Billicon width={16} height={18}/>}
+      />
     </View>
   );
 };
